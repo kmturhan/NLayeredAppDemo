@@ -13,7 +13,7 @@ namespace Northwind.WebFormsUI
 
 		private void Form1_Load(object sender, EventArgs e)
 		{
-			ProductManager productManager = new ProductManager(new NhProductDal());
+			ProductManager productManager = new ProductManager(new EfProductDal());
 			dgwProduct.DataSource = productManager.GetAll();
 		}
 	}
