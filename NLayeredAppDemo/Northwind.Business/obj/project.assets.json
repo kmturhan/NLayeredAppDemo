@@ -1109,6 +1109,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "EntityFramework >= 6.4.4",
       "Northwind.DataAccess >= 1.0.0",
       "Northwind.Entities >= 1.0.0"
     ]
@@ -1163,6 +1164,12 @@
     "frameworks": {
       "net7.0": {
         "targetAlias": "net7.0",
+        "dependencies": {
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.4.4, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",

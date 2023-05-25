@@ -36,6 +36,10 @@ namespace Northwind.WebFormsUI
 			cmbCategoryNewProduct.DataSource = _categoryService.GetAll();
 			cmbCategoryNewProduct.DisplayMember = "CategoryName";
 			cmbCategoryNewProduct.ValueMember = "CategoryId";
+
+			cmbCategoryUpdate.DataSource = _categoryService.GetAll();
+			cmbCategoryUpdate.DisplayMember = "CategoryName";
+			cmbCategoryUpdate.ValueMember = "CategoryId";
 		}
 
 		private void cmbCategory_SelectedIndexChanged(object sender, EventArgs e)
@@ -75,8 +79,48 @@ namespace Northwind.WebFormsUI
 				UnitsInStock = Convert.ToInt16(txbUnitInStockQuantityNewProduct.Text)
 			});
 			LoadProducts();
-			MessageBox.Show("Success Added!");
+			MessageBox.Show("Success Added For Product!");
+		}
 
+		private void btnUpdateProduct_Click(object sender, EventArgs e)
+		{
+			_productService.Update(new Product
+			{
+				ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value),
+				ProductName = tbxProductNameUpdate.Text,
+				CategoryId = Convert.ToInt32(cmbCategoryUpdate.SelectedValue),
+				UnitsInStock = Convert.ToInt16(tbxUnitInStockQuantityUpdate.Text),
+				QuantityPerUnit = tbxQuantityPerUnitUpdate.Text,
+				UnitPrice = Convert.ToDecimal(tbxUnitPriceUpdate.Text)
+			});
+			LoadProducts();
+			MessageBox.Show("Success Update For Product!");
+		}
+
+		private void dgwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
+		{
+			var row = dgwProduct.CurrentRow;
+			tbxProductNameUpdate.Text = row.Cells[1].Value.ToString();
+			cmbCategoryUpdate.SelectedValue = row.Cells[2].Value;
+			tbxUnitPriceUpdate.Text = row.Cells[3].Value.ToString();
+			tbxQuantityPerUnitUpdate.Text = row.Cells[4].Value.ToString();
+			tbxUnitInStockQuantityUpdate.Text = row.Cells[5].Value.ToString();
+		}
+
+		private void btnRemoveProduct_Click(object sender, EventArgs e)
+		{
+			try
+			{
+				_productService.Delete(new Product { ProductId = Convert.ToInt32(dgwProduct.CurrentRow.Cells[0].Value) });
+				LoadProducts();
+				MessageBox.Show("Success Delete For Product!");
+			}
+			catch (Exception exception)
+			{
+				MessageBox.Show(exception.Message);
+			}
+			
+			
 		}
 	}
 }

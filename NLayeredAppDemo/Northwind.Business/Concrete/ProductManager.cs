@@ -4,6 +4,7 @@ using Northwind.DataAccess.Concrete.EntityFramework;
 using Northwind.Entities.Concrete;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,6 +24,19 @@ namespace Northwind.Business.Concrete
 			_productDal.Add(product);
 		}
 
+		public void Delete(Product product)
+		{
+			try
+			{
+				_productDal.Delete(product);
+			}
+			catch (DbUpdateException e)
+			{
+				
+				throw new Exception("Silme gerçekleşemedi..!");
+			}
+		}
+
 		//EfProductDal productDal = new EfProductDal();
 		public List<Product> GetAll()
 		{
@@ -38,6 +52,12 @@ namespace Northwind.Business.Concrete
 		public List<Product> GetProductsByProductName(string text)
 		{
 			return _productDal.GetAll(p => p.ProductName.ToLower().Contains(text.ToLower()));
+		}
+
+		public void Update(Product product)
+		{
+
+			_productDal.Update(product);
 		}
 	}
 }
