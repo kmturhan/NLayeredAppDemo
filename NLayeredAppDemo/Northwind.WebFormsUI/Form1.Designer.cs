@@ -36,17 +36,17 @@
 			this.tbx = new System.Windows.Forms.TextBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.groupBox3 = new System.Windows.Forms.GroupBox();
-			this.txbProductNameNewProduct = new System.Windows.Forms.TextBox();
-			this.label3 = new System.Windows.Forms.Label();
-			this.label4 = new System.Windows.Forms.Label();
-			this.label5 = new System.Windows.Forms.Label();
-			this.label6 = new System.Windows.Forms.Label();
-			this.label7 = new System.Windows.Forms.Label();
-			this.cmbCategoryNewProduct = new System.Windows.Forms.ComboBox();
-			this.txbPriceNewProduct = new System.Windows.Forms.TextBox();
-			this.txbStockQuantityNewProduct = new System.Windows.Forms.TextBox();
-			this.txbUnitQuantityNewProduct = new System.Windows.Forms.TextBox();
 			this.btnAddNewProduct = new System.Windows.Forms.Button();
+			this.txbQuantityPerUnitNewProduct = new System.Windows.Forms.TextBox();
+			this.txbUnitInStockQuantityNewProduct = new System.Windows.Forms.TextBox();
+			this.txbUnitPriceNewProduct = new System.Windows.Forms.TextBox();
+			this.cmbCategoryNewProduct = new System.Windows.Forms.ComboBox();
+			this.label7 = new System.Windows.Forms.Label();
+			this.label6 = new System.Windows.Forms.Label();
+			this.label5 = new System.Windows.Forms.Label();
+			this.label4 = new System.Windows.Forms.Label();
+			this.label3 = new System.Windows.Forms.Label();
+			this.txbProductNameNewProduct = new System.Windows.Forms.TextBox();
 			((System.ComponentModel.ISupportInitialize)(this.dgwProduct)).BeginInit();
 			this.groupBox1.SuspendLayout();
 			this.groupBox2.SuspendLayout();
@@ -122,9 +122,9 @@
 			// groupBox3
 			// 
 			this.groupBox3.Controls.Add(this.btnAddNewProduct);
-			this.groupBox3.Controls.Add(this.txbUnitQuantityNewProduct);
-			this.groupBox3.Controls.Add(this.txbStockQuantityNewProduct);
-			this.groupBox3.Controls.Add(this.txbPriceNewProduct);
+			this.groupBox3.Controls.Add(this.txbQuantityPerUnitNewProduct);
+			this.groupBox3.Controls.Add(this.txbUnitInStockQuantityNewProduct);
+			this.groupBox3.Controls.Add(this.txbUnitPriceNewProduct);
 			this.groupBox3.Controls.Add(this.cmbCategoryNewProduct);
 			this.groupBox3.Controls.Add(this.label7);
 			this.groupBox3.Controls.Add(this.label6);
@@ -134,91 +134,10 @@
 			this.groupBox3.Controls.Add(this.txbProductNameNewProduct);
 			this.groupBox3.Location = new System.Drawing.Point(705, 163);
 			this.groupBox3.Name = "groupBox3";
-			this.groupBox3.Size = new System.Drawing.Size(303, 323);
+			this.groupBox3.Size = new System.Drawing.Size(341, 323);
 			this.groupBox3.TabIndex = 3;
 			this.groupBox3.TabStop = false;
 			this.groupBox3.Text = "Add New Product";
-			// 
-			// txbProductNameNewProduct
-			// 
-			this.txbProductNameNewProduct.Location = new System.Drawing.Point(105, 38);
-			this.txbProductNameNewProduct.Name = "txbProductNameNewProduct";
-			this.txbProductNameNewProduct.Size = new System.Drawing.Size(169, 23);
-			this.txbProductNameNewProduct.TabIndex = 0;
-			// 
-			// label3
-			// 
-			this.label3.AutoSize = true;
-			this.label3.Location = new System.Drawing.Point(6, 41);
-			this.label3.Name = "label3";
-			this.label3.Size = new System.Drawing.Size(84, 15);
-			this.label3.TabIndex = 1;
-			this.label3.Text = "Product Name";
-			// 
-			// label4
-			// 
-			this.label4.AutoSize = true;
-			this.label4.Location = new System.Drawing.Point(6, 95);
-			this.label4.Name = "label4";
-			this.label4.Size = new System.Drawing.Size(55, 15);
-			this.label4.TabIndex = 2;
-			this.label4.Text = "Category";
-			// 
-			// label5
-			// 
-			this.label5.AutoSize = true;
-			this.label5.Location = new System.Drawing.Point(6, 146);
-			this.label5.Name = "label5";
-			this.label5.Size = new System.Drawing.Size(33, 15);
-			this.label5.TabIndex = 3;
-			this.label5.Text = "Price";
-			// 
-			// label6
-			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(6, 190);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(85, 15);
-			this.label6.TabIndex = 4;
-			this.label6.Text = "Stock Quantity";
-			// 
-			// label7
-			// 
-			this.label7.AutoSize = true;
-			this.label7.Location = new System.Drawing.Point(6, 238);
-			this.label7.Name = "label7";
-			this.label7.Size = new System.Drawing.Size(78, 15);
-			this.label7.TabIndex = 5;
-			this.label7.Text = "Unit Quantity";
-			// 
-			// cmbCategoryNewProduct
-			// 
-			this.cmbCategoryNewProduct.FormattingEnabled = true;
-			this.cmbCategoryNewProduct.Location = new System.Drawing.Point(105, 92);
-			this.cmbCategoryNewProduct.Name = "cmbCategoryNewProduct";
-			this.cmbCategoryNewProduct.Size = new System.Drawing.Size(169, 23);
-			this.cmbCategoryNewProduct.TabIndex = 6;
-			// 
-			// txbPriceNewProduct
-			// 
-			this.txbPriceNewProduct.Location = new System.Drawing.Point(105, 143);
-			this.txbPriceNewProduct.Name = "txbPriceNewProduct";
-			this.txbPriceNewProduct.Size = new System.Drawing.Size(169, 23);
-			this.txbPriceNewProduct.TabIndex = 7;
-			// 
-			// txbStockQuantityNewProduct
-			// 
-			this.txbStockQuantityNewProduct.Location = new System.Drawing.Point(105, 187);
-			this.txbStockQuantityNewProduct.Name = "txbStockQuantityNewProduct";
-			this.txbStockQuantityNewProduct.Size = new System.Drawing.Size(169, 23);
-			this.txbStockQuantityNewProduct.TabIndex = 8;
-			// 
-			// txbUnitQuantityNewProduct
-			// 
-			this.txbUnitQuantityNewProduct.Location = new System.Drawing.Point(105, 235);
-			this.txbUnitQuantityNewProduct.Name = "txbUnitQuantityNewProduct";
-			this.txbUnitQuantityNewProduct.Size = new System.Drawing.Size(169, 23);
-			this.txbUnitQuantityNewProduct.TabIndex = 9;
 			// 
 			// btnAddNewProduct
 			// 
@@ -229,6 +148,87 @@
 			this.btnAddNewProduct.Text = "Add";
 			this.btnAddNewProduct.UseVisualStyleBackColor = true;
 			this.btnAddNewProduct.Click += new System.EventHandler(this.btnAddNewProduct_Click);
+			// 
+			// txbQuantityPerUnitNewProduct
+			// 
+			this.txbQuantityPerUnitNewProduct.Location = new System.Drawing.Point(135, 187);
+			this.txbQuantityPerUnitNewProduct.Name = "txbQuantityPerUnitNewProduct";
+			this.txbQuantityPerUnitNewProduct.Size = new System.Drawing.Size(169, 23);
+			this.txbQuantityPerUnitNewProduct.TabIndex = 9;
+			// 
+			// txbUnitInStockQuantityNewProduct
+			// 
+			this.txbUnitInStockQuantityNewProduct.Location = new System.Drawing.Point(134, 235);
+			this.txbUnitInStockQuantityNewProduct.Name = "txbUnitInStockQuantityNewProduct";
+			this.txbUnitInStockQuantityNewProduct.Size = new System.Drawing.Size(169, 23);
+			this.txbUnitInStockQuantityNewProduct.TabIndex = 8;
+			// 
+			// txbUnitPriceNewProduct
+			// 
+			this.txbUnitPriceNewProduct.Location = new System.Drawing.Point(134, 143);
+			this.txbUnitPriceNewProduct.Name = "txbUnitPriceNewProduct";
+			this.txbUnitPriceNewProduct.Size = new System.Drawing.Size(169, 23);
+			this.txbUnitPriceNewProduct.TabIndex = 7;
+			// 
+			// cmbCategoryNewProduct
+			// 
+			this.cmbCategoryNewProduct.FormattingEnabled = true;
+			this.cmbCategoryNewProduct.Location = new System.Drawing.Point(134, 92);
+			this.cmbCategoryNewProduct.Name = "cmbCategoryNewProduct";
+			this.cmbCategoryNewProduct.Size = new System.Drawing.Size(169, 23);
+			this.cmbCategoryNewProduct.TabIndex = 6;
+			// 
+			// label7
+			// 
+			this.label7.AutoSize = true;
+			this.label7.Location = new System.Drawing.Point(6, 190);
+			this.label7.Name = "label7";
+			this.label7.Size = new System.Drawing.Size(98, 15);
+			this.label7.TabIndex = 5;
+			this.label7.Text = "Quantity Per Unit";
+			// 
+			// label6
+			// 
+			this.label6.AutoSize = true;
+			this.label6.Location = new System.Drawing.Point(6, 238);
+			this.label6.Name = "label6";
+			this.label6.Size = new System.Drawing.Size(123, 15);
+			this.label6.TabIndex = 4;
+			this.label6.Text = "Unit In Stock Quantity";
+			// 
+			// label5
+			// 
+			this.label5.AutoSize = true;
+			this.label5.Location = new System.Drawing.Point(6, 146);
+			this.label5.Name = "label5";
+			this.label5.Size = new System.Drawing.Size(58, 15);
+			this.label5.TabIndex = 3;
+			this.label5.Text = "Unit Price";
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Location = new System.Drawing.Point(6, 95);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(55, 15);
+			this.label4.TabIndex = 2;
+			this.label4.Text = "Category";
+			// 
+			// label3
+			// 
+			this.label3.AutoSize = true;
+			this.label3.Location = new System.Drawing.Point(6, 41);
+			this.label3.Name = "label3";
+			this.label3.Size = new System.Drawing.Size(84, 15);
+			this.label3.TabIndex = 1;
+			this.label3.Text = "Product Name";
+			// 
+			// txbProductNameNewProduct
+			// 
+			this.txbProductNameNewProduct.Location = new System.Drawing.Point(134, 38);
+			this.txbProductNameNewProduct.Name = "txbProductNameNewProduct";
+			this.txbProductNameNewProduct.Size = new System.Drawing.Size(169, 23);
+			this.txbProductNameNewProduct.TabIndex = 0;
 			// 
 			// Form1
 			// 
@@ -264,9 +264,9 @@
 		private Label label2;
 		private GroupBox groupBox3;
 		private Button btnAddNewProduct;
-		private TextBox txbUnitQuantityNewProduct;
-		private TextBox txbStockQuantityNewProduct;
-		private TextBox txbPriceNewProduct;
+		private TextBox txbQuantityPerUnitNewProduct;
+		private TextBox txbUnitInStockQuantityNewProduct;
+		private TextBox txbUnitPriceNewProduct;
 		private ComboBox cmbCategoryNewProduct;
 		private Label label7;
 		private Label label6;

@@ -70,9 +70,9 @@ namespace Northwind.WebFormsUI
 			{
 				CategoryId = Convert.ToInt32(cmbCategoryNewProduct.SelectedValue),
 				ProductName = txbProductNameNewProduct.Text,
-				QuantityPerUnit = txbStockQuantityNewProduct.Text,
-				UnitPrice = Convert.ToInt32(txbPriceNewProduct.Text),
-				UnitsInStock = Convert.ToInt16(txbStockQuantityNewProduct.Text)
+				QuantityPerUnit = txbQuantityPerUnitNewProduct.Text,
+				UnitPrice = Convert.ToInt32(txbUnitPriceNewProduct.Text),
+				UnitsInStock = Convert.ToInt16(txbUnitInStockQuantityNewProduct.Text)
 			});
 			LoadProducts();
 			MessageBox.Show("Success Added!");
