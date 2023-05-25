@@ -31,3 +31,4 @@ C:\Users\kmtur\source\repos\NLayeredAppDemo\NLayeredAppDemo\Northwind.WebFormsUI
 C:\Users\kmtur\source\repos\NLayeredAppDemo\NLayeredAppDemo\Northwind.WebFormsUI\obj\Debug\net7.0-windows\Northwind.WebFormsUI.genruntimeconfig.cache
 C:\Users\kmtur\source\repos\NLayeredAppDemo\NLayeredAppDemo\Northwind.WebFormsUI\obj\Debug\net7.0-windows\ref\Northwind.WebFormsUI.dll
 C:\Users\kmtur\source\repos\NLayeredAppDemo\NLayeredAppDemo\Northwind.WebFormsUI\bin\Debug\net7.0-windows\Northwind.WebFormsUI.dll.config
+C:\Users\kmtur\source\repos\NLayeredAppDemo\NLayeredAppDemo\Northwind.WebFormsUI\bin\Debug\net7.0-windows\FluentValidation.dll

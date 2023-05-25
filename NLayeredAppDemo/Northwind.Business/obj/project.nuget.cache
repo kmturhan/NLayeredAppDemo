@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SHrRVxgoRLc5e7OwVfjC8mGRVV8yEULZU2zycHqWtPdPnoaV+lxT0qFC7YCPE+tNVXTjNX1d23BLul5sTGKxkg==",
+  "dgSpecHash": "fHV6qDKeqQ3BzdWwJGNt+lFUOhw6qE86JLfmGmpXfDs6WiPuZIAyaDRJpMHhXEdRfRac4Wp0Yemxg9GzQ4aDkA==",
   "success": true,
   "projectFilePath": "C:\\Users\\kmtur\\source\\repos\\NLayeredAppDemo\\NLayeredAppDemo\\Northwind.Business\\Northwind.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kmtur\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
+    "C:\\Users\\kmtur\\.nuget\\packages\\fluentvalidation\\11.5.2\\fluentvalidation.11.5.2.nupkg.sha512",
     "C:\\Users\\kmtur\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\kmtur\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\kmtur\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
