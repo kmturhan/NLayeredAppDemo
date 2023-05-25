@@ -9,6 +9,7 @@
   <ItemGroup>
     <PackageReference Include="EntityFramework" Version="6.4.4" />
     <PackageReference Include="FluentValidation" Version="11.5.2" />
+    <PackageReference Include="Ninject" Version="3.3.6" />
   </ItemGroup>
 
   <ItemGroup>
